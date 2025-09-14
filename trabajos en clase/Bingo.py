@@ -15,10 +15,12 @@ while ganar == 0:
         print(f"El numero que salio es: {numero}")
         for i in range(filas):
             for j in range(columna):
+            print("")
                 if talon[i][j] == numero:
                     print(f"¡Número {numero} marcado en tu cartón!")
                     talon[i][j] = 0
-                    print(talon,"\n")
+                    print(talon)
+            print("")
     if all(all(x == 0 for x in fila) for fila in talon):
         print("¡Bingo en el cartón!")
         ganar = 1
