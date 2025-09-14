@@ -1,1 +1,1 @@
-#creado para cuando tenga que hacer varios algoritmo
+#creado para cuando tenga que hacer varios algoritmos
