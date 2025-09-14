@@ -83,3 +83,30 @@ elif escala < 7:
     print("Categoria muy fuerte")
 elif escala >= 7:
     print("Categoria extremo")    
+#10) estaciones segun hemisferio
+dia, mes = input("ingrese el dia/mes ej:(28/febrero): ").split("/")
+hemisferio = input("ingrese el hemisferio en el que se encuentra (n/s)").lower()
+dia = int(dia)
+if mes == "enero" or mes == "febrero" or mes == "marzo" or mes == "abril" or mes == "mayo" or mes == "junio" or mes == "julio" or mes == "agosto" or mes == "septiembre" or mes == "octubre" or mes == "noviembre" or mes == "diciembre":
+    if hemisferio == "n":
+        if (mes == "enero") or (mes == "febrero") or (mes == "marzo" and dia < 21) or (mes == "diciembre" and dia >= 21):
+            print("Es invierno")
+        elif (mes == "marzo" and dia >= 21) or (mes == "abril") or (mes == "mayo") or (mes == "junio" and dia < 21):
+            print("Es primavera")
+        elif (mes == "junio" and dia >= 21) or (mes == "julio") or (mes == "agosto") or (mes == "septiembre" and dia < 23):
+            print("Es verano")
+        elif (mes == "septiembre" and dia >= 23) or (mes == "octubre") or (mes == "noviembre") or (mes == "diciembre" and dia < 21):
+            print("Es otoño")
+    elif hemisferio == "s":
+        if (mes == "enero") or (mes == "febrero") or (mes == "marzo" and dia < 21) or (mes == "diciembre" and dia >= 21):
+            print("Es verano")
+        elif (mes == "marzo" and dia >= 21) or (mes == "abril") or (mes == "mayo") or (mes == "junio" and dia < 21):
+            print("Es otoño")
+        elif (mes == "junio" and dia >= 21) or (mes == "julio") or (mes == "agosto") or (mes == "septiembre" and dia < 23):
+            print("Es invierno")
+        elif (mes == "septiembre" and dia >= 23) or (mes == "octubre") or (mes == "noviembre") or (mes == "diciembre" and dia < 21):
+            print("Es primavera")
+    else:
+        print("Hemisferio no valido")
+else:
+    print("Mes no valido")
