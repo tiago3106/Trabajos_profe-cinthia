@@ -1,2 +1,4 @@
 nombre, precio, cantidad
-fresa,2,4
+naranja,3,1
+banana,4,4
+pera,8,1
