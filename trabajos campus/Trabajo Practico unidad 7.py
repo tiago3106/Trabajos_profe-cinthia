@@ -73,5 +73,5 @@ print("Agenda de reuniones:")
 #10)
 normal = {"argentina": 'Buenos Aires', "brasil": 'Brasilia', "chile": 'Santiago', "colombia": 'Bogotá'}
 inversa = {valor: clave for clave, valor in normal.items()}
-print("Diccionario normal:", normal)
-print("Diccionario inverso:", inversa)
+print("Diccionario normal: ", normal)
+print("Diccionario inverso: ", inversa)

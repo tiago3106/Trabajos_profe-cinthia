@@ -1,0 +1,2 @@
+nombre, precio, cantidad
+fresa,2,4
